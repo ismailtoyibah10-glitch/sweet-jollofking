@@ -1,0 +1,489 @@
+
+/* =====================================
+   1. GENERAL WEBSITE STYLING
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF8F0;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+/* =====================================
+   2. HEADER - LOGO LEFT, MENU RIGHT
+===================================== */
+
+header {
+    background-color: #8B1E1E;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 40px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+/* =====================================
+   3. NAVIGATION MENU
+===================================== */
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #E6A23C;
+}
+
+/* =====================================
+   4. MAIN CONTENT
+===================================== */
+
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 25px;
+}
+
+h2 {
+    color: #8B1E1E;
+    font-size: 28px;
+}
+
+h3 {
+    color: #276749;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* =====================================
+   5. HOME PAGE - THREE CARDS
+===================================== */
+
+.welcome {
+    margin-bottom: 35px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.card {
+    flex: 1;
+    background-color: white;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin-top: 12px;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+/* =====================================
+   6. INGREDIENTS
+===================================== */
+
+.ingredients {
+    margin-top: 40px;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* =====================================
+   7. ABOUT PAGE - PHOTO BESIDE TEXT
+===================================== */
+
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 45px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+/* =====================================
+   8. COOKING TIMELINE TABLE
+===================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background-color: #276749;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+td {
+    padding: 15px;
+    border: 1px solid #E5D8C8;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #FFF1E3;
+}
+
+/* =====================================
+   9. CONTACT PAGE - CENTRED FORM
+===================================== */
+
+.contact-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 650px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    color: #276749;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #D6C7B8;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #276749;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* =====================================
+   10. BUTTON AND HOVER EFFECT
+===================================== */
+
+button {
+    background-color: #8B1E1E;
+    color: white;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #E6A23C;
+    color: #333333;
+}
+
+/* =====================================
+   11. FOOTER - CONTENT IN A ROW
+===================================== */
+
+footer {
+    background-color: #276749;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 40px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* =====================================
+   12. MOBILE RESPONSIVENESS
+===================================== */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .about-section {
+        flex-direction: column;
+    }
+
+    .about-image img {
+        height: auto;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .contact-container {
+        padding: 20px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+}
+
+/* =====================================
+   13. RESPONSIVE IMAGES
+===================================== */
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* =====================================
+   14. PHOTO GALLERY - CSS GRID
+===================================== */
+
+.gallery-section {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.gallery-section h2 {
+    text-align: center;
+}
+
+.gallery-section > p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.gallery-grid {
+    display: grid;
+
+    /* Three columns on laptop */
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* =====================================
+   15. PHONE RESPONSIVENESS
+===================================== */
+
+@media (max-width: 700px) {
+
+    /* Cards stack vertically */
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    /* About photo appears above text */
+    .about-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .about-image,
+    .about-text {
+        width: 100%;
+    }
+
+    /* Gallery changes to two columns */
+    .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .gallery-item img {
+        height: 160px;
+    }
+
+    /* Contact form fits the phone */
+    .contact-container {
+        width: 100%;
+    }
+
+    input,
+    textarea {
+        max-width: 100%;
+    }
+
+    /* Footer content stacks */
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Prevent horizontal page scrolling */
+    body {
+        overflow-x: hidden;
+    }
+
+    main {
+        width: 100%;
+        min-width: 0;
+    }
+
+    table {
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    th,
+    td {
+        overflow-wrap: anywhere;
+    }
+}
+
+/* =====================================
+   16. VERY SMALL PHONE SCREENS
+===================================== */
+
+@media (max-width: 360px) {
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item img {
+        height: 200px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        gap: 8px;
+    }
+}
